@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shoping</title>
+    <!-- tailwind link add -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.46.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body class="p-5">
+    <!-- header section -->
+    <header class="">
+      <!-- searce bar -->
+      <div class="form-control w-1/2 mx-auto max-w-xs mt-5 mb-5">
+        <label class="label">
+          <span class="label-text">Search your product..</span>
+          <span class="label-text-alt">Press <kbd class="kbd">Enter</kbd></span>
+        </label>
+        <input
+          id="search-field"
+          type="text"
+          placeholder="Search here.."
+          class="input input-bordered w-full max-w-xs"
+        />
+      </div>
+    </header>
+
+    <!-- spinar-added -->
+    <progress id="spinner" class="progress w-full hidden"></progress>
+
+    <!-- not-found-massege -->
+    <section id="not-found" class="grid justify-items-stretch"></section>
+
+    <!-- main section -->
+    <main>
+      <div class="flex gap-8">
+        <!-- menu -->
+        <div class="flex-none">
+          <ul
+            id="all-product"
+            class="menu bg-secondary text-secondary-content p-2 rounded-box p-4"
+          ></ul>
+        </div>
+
+        <!-- card -->
+        <div id="product-container" class="grow grid grid-cols-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4   gap-4"></div>
+      </div>
+    </main>
+
+    <!-- modal-section -->
+
+    <!-- Put this part before -->
+    <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+    <div class="modal">
+      <div class="modal-box relative">
+        <label
+          for="my-modal-3"
+          class="btn btn-sm btn-circle absolute right-2 top-2"
+          >✕</label
+        >
+        <div id="modal-body">
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- js file added -->
+    <script src="/JS/index.js"></script>
+    <!-- tailwind js link add -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
